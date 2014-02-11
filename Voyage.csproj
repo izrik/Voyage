@@ -47,5 +47,7 @@
   <ItemGroup>
     <None Include="LICENSE" />
     <None Include="README.md" />
+    <None Include="TODO" />
+    <None Include="HISTORY.rst" />
   </ItemGroup>
 </Project>
