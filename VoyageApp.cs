@@ -19,7 +19,7 @@ namespace Voyage
 
                 if (resources != null && resources.Length > 0)
                 {
-                    Handler del = (Handler)method.CreateDelegate(typeof(Handler), this);
+                    Handler del = (Handler)Delegate.CreateDelegate(typeof(Handler), this, method);
 
                     foreach (var res in resources)
                     {
