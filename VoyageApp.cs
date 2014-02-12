@@ -2,6 +2,7 @@ using System;
 using Conveyor;
 using System.Collections.Generic;
 using System.Reflection;
+using Nustache.Core;
 
 namespace Voyage
 {
@@ -43,6 +44,11 @@ namespace Voyage
             }
 
             return new Response(404);
+        }
+
+        protected string RenderTemplate(string filename, object data)
+        {
+            return Render.FileToString(filename, data);
         }
 
         public void Run(int port=8080)

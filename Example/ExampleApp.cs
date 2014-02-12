@@ -1,6 +1,7 @@
 using System;
 using Conveyor;
 using Voyage;
+using System.Collections.Generic;
 
 namespace Example
 {
@@ -9,7 +10,10 @@ namespace Example
         [Resource("/")]
         public Response MainPage(Request request)
         {
-            return new Response(200, body: "This is the main page.");
+            var body = RenderTemplate("files/index.mustache",
+                new { message = "this is the message" });
+
+            return new Response(200, headers: new [] {"Content-type", "text/html"}, body: body);
         }
     }
 }

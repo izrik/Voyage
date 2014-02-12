@@ -5,12 +5,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage", "Voyage.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Tests", "Voyage.Tests\Voyage.Tests.csproj", "{7B012A93-F90A-453F-8C01-5FCD2B5436E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conveyor", "..\Conveyor\Conveyor.csproj", "{B88D764B-2881-41C3-A047-F16146C4502B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{298BC3B8-8CB0-4A7D-B1C7-D4EC11F2A070}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{298BC3B8-8CB0-4A7D-B1C7-D4EC11F2A070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298BC3B8-8CB0-4A7D-B1C7-D4EC11F2A070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298BC3B8-8CB0-4A7D-B1C7-D4EC11F2A070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298BC3B8-8CB0-4A7D-B1C7-D4EC11F2A070}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B012A93-F90A-453F-8C01-5FCD2B5436E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B012A93-F90A-453F-8C01-5FCD2B5436E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B012A93-F90A-453F-8C01-5FCD2B5436E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -19,6 +27,10 @@ Global
 		{AE73FC1C-2051-47B7-80B3-70D797C4FCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE73FC1C-2051-47B7-80B3-70D797C4FCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE73FC1C-2051-47B7-80B3-70D797C4FCE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88D764B-2881-41C3-A047-F16146C4502B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88D764B-2881-41C3-A047-F16146C4502B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88D764B-2881-41C3-A047-F16146C4502B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88D764B-2881-41C3-A047-F16146C4502B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Voyage.csproj

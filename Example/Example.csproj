@@ -18,7 +18,17 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Externalconsole>true</Externalconsole>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Execute" command="${TargetFile}" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
+    <ConsolePause>false</ConsolePause>
+    <EnvironmentVariables>
+      <EnvironmentVariables>
+        <Variable name="PWD" value="${ProjectDir}" />
+      </EnvironmentVariables>
+    </EnvironmentVariables>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -30,6 +40,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Nustache.Core">
+      <HintPath>..\packages\Nustache.1.13.8.22\lib\net20\Nustache.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -46,5 +59,12 @@
       <Project>{AE73FC1C-2051-47B7-80B3-70D797C4FCE7}</Project>
       <Name>Voyage</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="files\index.mustache" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

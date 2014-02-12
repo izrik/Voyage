@@ -30,6 +30,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="Nustache.Core">
+      <HintPath>packages\Nustache.1.13.8.22\lib\net20\Nustache.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -38,15 +41,16 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Conveyor\Conveyor.csproj">
-      <Project>{B88D764B-2881-41C3-A047-F16146C4502B}</Project>
-      <Name>Conveyor</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="LICENSE" />
     <None Include="README.md" />
     <None Include="TODO" />
     <None Include="HISTORY.rst" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Conveyor\Conveyor.csproj">
+      <Project>{B88D764B-2881-41C3-A047-F16146C4502B}</Project>
+      <Name>Conveyor</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
