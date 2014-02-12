@@ -4,9 +4,9 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTitle("Voyage")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Metaphysics Industries, Inc.")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("2014 Metaphysics Industries, Inc.")]
+[assembly: AssemblyCopyright("2014 Richard Sartor")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
