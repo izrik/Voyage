@@ -1,1 +1,32 @@
 
+in no particular order:
+
+different return types on view functions
+different parameter type on view functions
+support streams, textreaders, textwriters, etc.
+
+easy file uploads
+
+later:
+
+views based on properties and fields
+
+chain apps, eg:
+    class CoreApp : VoyageApp
+
+        [Resource("/child/")]
+        public ChildApp Child = new ChildApp();
+
+        public class ChildApp : VoyageApp 
+
+            [Resource("item")]
+            public object GetItem(...)
+                return ...
+
+    then, a path of "/child/item" on CoreApp gets routed to
+    ChildApp.GetItem with a ap-specific path of "item" or "/item"
+
+
+load static files and templates from resources (i.e. not bound to file system location)
+
+allow for other template engines
